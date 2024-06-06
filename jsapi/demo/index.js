@@ -1,5 +1,5 @@
 /**
- * Run a HTTP server with this demo directory as the root, and the
+ * Run an HTTP server with this demo directory as the root, and the
  * output of the Typescript build in dist.
 */
 
