@@ -2,6 +2,7 @@ name: TypeScript NPM Package
 
 on:
   workflow_dispatch:
+    branches: ["bump_express"]
   pull_request:
   push:
     branches: [ "master", "bump_express" ]
