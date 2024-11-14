@@ -47,7 +47,7 @@ jobs:
         mv _docs ../_build/typescript
         cp -R --no-preserve=all ./result-demo/share/doc/cardano-addresses-demo-js ../_build/demo
     - name: '📤 Publish Documentation'
-      if: ${{ startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master' }}
+      # if: ${{ startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/test-4.0.0-js' }}
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

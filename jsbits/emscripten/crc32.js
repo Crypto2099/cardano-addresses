@@ -8,7 +8,7 @@ function h$crc32(crc, ptr_d, ptr_o, len) {
                 tmp = tmp & 1 ? 3988292384 ^ tmp >>> 1 : tmp >>> 1;
             }
             h$crc32table[i] = tmp;
-        }        
+        }
     }
 
     crc = crc ^ -1;
@@ -18,3 +18,4 @@ function h$crc32(crc, ptr_d, ptr_o, len) {
 
     return (crc ^ -1);
 }
+
